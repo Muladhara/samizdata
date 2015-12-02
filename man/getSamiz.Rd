@@ -22,25 +22,26 @@ samizdata(source, ts_name, vintage='today', country='all', transformation='raw')
 Possible values are valid YYYY-MM-DD dates. The default value is today's date.}
 \item{country}{For some sources the country is needed in the ISO country code format(e.g. "IT","US").}
 \item{transformation}{It allows to apply mathematical transformations to time series values before downloading them. If no transformation is specified, then the values are the original ones (RAW). 
-The possible values for the parameter are:
 
-RAW: default
+The possible values for the parameter 'transformation' are:
 
-LOG: the base-10 log of the values
+\bold{RAW}:  default
 
-LAG: x[t]-x[t-1]
+\bold{LOG}:  the base-10 log of the values
 
-LAG2: x[t]-x[t-2]
+\bold{LAG}:  x[t]-x[t-1]
 
-LAGLOG: LOG(x[t])-LOG(x[t-1])
+\bold{LAG2}:         x[t]-x[t-2]
 
-LAG2LOG: LOG(x[t])-LOG(x[t-2])
+\bold{LAGLOG}:       LOG(x[t])-LOG(x[t-1])
 
-LAG12LOG: LOG(x[t])-LOG(x[t-12])
+\bold{LAG2LOG}:      LOG(x[t])-LOG(x[t-2])
 
-SW: LOG(x[t] - 2*LOG(x[t-1])+LOG(x[t-2])
+\bold{LAG12LOG}:    LOG(x[t])-LOG(x[t-12])
 
-LAG12LAGLOG: LOG(x[t])-LOG(x[t-12])-LOG(x[t-1])-LOG(x[t-13])
+\bold{SW}:          LOG(x[t] - 2*LOG(x[t-1])+LOG(x[t-2])
+
+\bold{LAG12LAGLOG}: LOG(x[t])-LOG(x[t-12])-LOG(x[t-1])-LOG(x[t-13])
 }
 }
 
@@ -61,12 +62,15 @@ require(stats)
 # download from the source 'fred' the time series 'gdp' 
 x <- getSamiz("fred", "gdp")
 
+
 # download from the source 'fred' the time series 'gdp' at the vintage date '2015-07-01'
 x <- getSamiz("fred", "gdp", vintage="2015-07-01")
+
 
 # download from the source 'worldbank' the time series 'ic.tax.totl.cp.zs', 
 # for the country Albania 'AL', with the transformation 'log'
 x <- getSamiz("worldbank", "ic.tax.totl.cp.zs", country="AL", transformation="log")
+
 
 # download from the source 'ecb' the time series 'gst_a_fi_n_b0x13_m8v_b1300_sa_e'  
 # at the transformation 'log'
