@@ -1,7 +1,6 @@
 \name{getSamiz}
 \alias{getSamiz time series data}
-\title{
-}
+\title{getSamiz}
 
 \description{
 Useful tools for working with time series data retrieved by Samizdata provider.
