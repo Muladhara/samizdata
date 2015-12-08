@@ -5,6 +5,7 @@
 
 \description{
 Useful tools for working with time series data retrieved by Samizdata provider.
+It allows to easily retrieve and transform time series data from a variety of official sources.
 
 It returns a data frame with two lists: \code{\link{date}(date)} and \code{\link{ts_name}}(obs.).
 }
