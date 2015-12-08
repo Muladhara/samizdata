@@ -4,8 +4,7 @@ Type: Package
 Title: Functions to download and work with Samizdata data provider.
 Date: 2015-11-01
 Author: Eleonora Laurenza
-Maintainer: Eleonora Laurenza
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Maintainer: Eleonora Laurenza - info@samizdata.it
 Description: Useful tools to work with time series data retrieved from Samizdata provider. It allows to easily retrieve and transform time series data from a variety of official sources.  
 Depends: httr   
 License: file LICENSE
