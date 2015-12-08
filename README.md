@@ -8,6 +8,7 @@ To get the current development version from github:
 
 ```R
 install.packages("devtools")
+require("devtools")
 install_github("Muladhara/samizdata")
 ```
 
