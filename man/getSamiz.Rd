@@ -3,8 +3,8 @@
 \title{getSamiz}
 
 \description{
-Useful tools for working with time series data retrieved by Samizdata provider.
-It allows to easily retrieve and transform time series data from a variety of official sources.
+Useful tools to work with time series data retrieved from Samizdata provider.
+The function allows to easily retrieve and transform time series data from a variety of official sources.
 
 It returns a data frame with two lists: \code{\link{date}(date)} and \code{\link{ts_name}}(obs.).
 }
@@ -19,7 +19,7 @@ samizdata(source, ts_name, vintage='today', country='all', transformation='raw')
 \item{ts_name}{The name of the time series.}
 \item{vintage}{It allows to choose the version of a time series as of a specific point in time. 
 Possible values are valid YYYY-MM-DD dates. The default value is today's date.}
-\item{country}{For some sources the country is needed in the ISO country code format(e.g. "IT","US").}
+\item{country}{For some sources the country is needed in the ISO country code format (e.g. "IT","US").}
 \item{transformation}{It allows to apply mathematical transformations to time series values before downloading them. If no transformation is specified, then the values are the original ones (RAW). 
 
 The possible values for the parameter 'transformation' are:
@@ -48,11 +48,11 @@ The possible values for the parameter 'transformation' are:
 The function 
 \code{\link{getSamiz}} allows to download data directly from the Samizdata provider.
 
-The values for the \code{\link{source}}, \code{\link{ts_name}}, \code{\link{country}}, \code{\link{country}}, \code{\link{transformation}} are case-insensitive.
+The values for the \code{\link{source}}, \code{\link{ts_name}}, \code{\link{country}}, \code{\link{transformation}} are case-insensitive.
 }
 
 \references{
-\url{http://www.samizdata.it/}
+\url{http://www.samizdata.it/api_doc.html#R}
 }
 
 \examples{

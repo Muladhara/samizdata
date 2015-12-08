@@ -1,12 +1,12 @@
 Package: samizdata
 Version: 1.0
 Type: Package
-Title: Functions for download and working with Samizdata data provider.
+Title: Functions to download and work with Samizdata data provider.
 Date: 2015-11-01
 Author: Eleonora Laurenza
 Maintainer: Eleonora Laurenza
 Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: Useful tools for working with time series data retrieved by Samizdata provider. It allows to easily retrieve and transform time series data through a variety of official sources.  
+Description: Useful tools to work with time series data retrieved from Samizdata provider. It allows to easily retrieve and transform time series data from a variety of official sources.  
 Depends: httr   
 License: file LICENSE
 Keyword: time series, Samizdata, open provider
