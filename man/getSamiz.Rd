@@ -10,12 +10,12 @@ It returns a data frame with two lists: \code{\link{date}(date)} and \code{\link
 }
 
 \usage{
-samizdata(source, ts_name, vintage='today', country='all', transformation='raw')
+getSamiz(src, ts_name, vintage='today', country='all', transformation='raw')
 }
 
 
 \arguments{
-\item{source}{The source of the time series you want to download (e.g. "FRED","OECD", etc.)}
+\item{src}{The source of the time series you want to download (e.g. "FRED","OECD", etc.)}
 \item{ts_name}{The name of the time series.}
 \item{vintage}{It allows to choose the version of a time series as of a specific point in time. 
 Possible values are valid YYYY-MM-DD dates. The default value is today's date.}
@@ -56,7 +56,7 @@ The values for the \code{\link{source}}, \code{\link{ts_name}}, \code{\link{coun
 }
 
 \examples{
-require(stats)
+require('stats','samizdata')
 
 # download from the source 'fred' the time series 'gdp' 
 x <- getSamiz("fred", "gdp")

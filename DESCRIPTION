@@ -1,13 +1,14 @@
 Package: samizdata
 Version: 1.0
+Date: 2015-12-15
 Type: Package
-Title: Functions to download and work with Samizdata data provider.
-Date: 2015-11-01
+Title: FUNCTIONS TO DOWNLOAD AND WORK WITH 'SAMIZDATA' DATA PROVIDER
 Author: Eleonora Laurenza
 Maintainer: Eleonora Laurenza <info@samizdata.it>
-Description: Useful tools to work with time series data retrieved from Samizdata provider. It allows to easily retrieve and transform time series data from a variety of official sources.  
-Depends: httr   
-License: file LICENSE
+Description: Useful tools to work with time series data retrieved from 'Samizdata' provider. It allows to easily retrieve and transform time series data from a variety of official sources.  
+Depends: R (>= 3.1.3), httr   
+License: GPL (>=2)
 Keyword: time series, Samizdata, open provider
 Repository: CRAN
 URL: https://github.com/Muladhara/samizdata
+BugReports: http://www.samizdata.it/index.html#job
